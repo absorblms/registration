@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Form validation successful, do further processing or submit the form
         console.log('Form submitted successfully!');
         fetchpost(e);
+        return true;
     });
 
     function fetchpost(e) {
@@ -50,6 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .then((txt) => {
                 // do something when server responds
                 console.log(txt);
+                form.remove();
+                const template = document.getElementById('thankYou');
+                const clone = template.content.cloneNode(true);
+                document.body.appendChild(clone);
             })
             .catch(err => console.log(err));
 
