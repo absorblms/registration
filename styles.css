@@ -6,22 +6,24 @@ body {
 
 #registration-form {
     display: grid;
-	grid-gap: 1rem;
+    grid-gap: 1rem;
 }
+
 .form-group {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
     align-items: center;
 }
+
 label {
-	font-weight: 300;
-	text-transform: uppercase;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'] {
+input[type = 'text'],
+input[type = 'email'],
+input[type = 'password'] {
     border: 1px solid #c4c4c7;
     border-radius: 0.25rem;
     padding: 1rem;
@@ -29,7 +31,7 @@ input[type='password'] {
     width: 92%;
 }
 
-button[type='submit'] {
+button[type = 'submit'] {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
@@ -44,12 +46,15 @@ button[type='submit'] {
     margin-top: 5px;
 }
 @media screen and (min-width: 800px) {
+
     body {
         font-size: 1rem;
     }
+
     .form-group {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+    
     label {
         text-align: right;
     }
