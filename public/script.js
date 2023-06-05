@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (password.length < 8) {
                 showError('password', 'Password must contain 8 characters.');
             } else {
-                showError('password', 'Password must contain one uppercase, one lowercase, and one digit.')
+                showError('password', 'Password must contain one uppercase, one lowercase, and one digit.');
             }
             return;
         }
