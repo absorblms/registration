@@ -1,0 +1,8 @@
+{
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.indentSize": "tabSize",
+  "editor.detectIndentation": false
+}
